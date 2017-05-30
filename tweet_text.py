@@ -11,6 +11,8 @@ def reply(tweet):
     user = tweet['user']['screen_name']
     if "Which Pokemon is #1" in message:
         return "Bulbasaur"
+    if "Which Pokemon is #2" in message:
+        return "Ivysaur"
     if "1+2" in message:
         return "3"
     return "2"
