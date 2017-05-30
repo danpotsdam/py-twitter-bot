@@ -17,7 +17,7 @@ def reply(tweet):
         return "2000"
     if "1+2" in message:
         return "3"
-    if "@bot oh rly?" in message:
+    if "oh rly?" in message:
         return "YA RLY!"
     return "2"
 

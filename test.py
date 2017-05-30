@@ -37,7 +37,7 @@ class TestTweetText(unittest.TestCase):
         self.assertTrue("3" in response)
         
     def test_text(self):
-        response = reply({'text': '@bot oh rly?', 'user': {'screen_name': 'TestUser'}})
+        response = reply({'text': 'oh rly?', 'user': {'screen_name': 'TestUser'}})
         self.assertTrue("YA RLY!" in response)
     
 if __name__ == '__main__':
