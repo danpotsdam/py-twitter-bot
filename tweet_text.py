@@ -13,6 +13,8 @@ def reply(tweet):
         return "Bulbasaur"
     if "Which Pokemon is #2" in message:
         return "Ivysaur"
+    if "1999+1" in message:
+        return "2000"
     if "1+2" in message:
         return "3"
     return "2"
