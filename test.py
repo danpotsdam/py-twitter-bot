@@ -35,5 +35,10 @@ class TestTweetText(unittest.TestCase):
     def test_realmath(self):
         response = reply({'text': '1+2', 'user': {'screen_name': 'TestUser'}})
         self.assertTrue("3" in response)
+        
+    def test_text(self):
+        response = reply({'text': '@bot oh rly?', 'user': {'screen_name': 'TestUser'}})
+        self.assertTrue("YA RLY!" in response)
+    
 if __name__ == '__main__':
     unittest.main(verbosity=2)
